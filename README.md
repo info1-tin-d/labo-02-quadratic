@@ -6,14 +6,14 @@
 Le programme `quadratic` résous l'équation [quadratique](https://fr.wikipedia.org/wiki/Formule_quadratique). Il reçoit en paramètre `A`, `B` et `C` et retourne les deux solutions `x1` et `x2`:
 
 ```shell
-$ ./quadratic 1 -2 3
+$ ./quadratic -1 2 3
 Pour les valeurs:
-A = 1
-B = -2
+A = -1
+B = 2
 C = 3
 
 Les solutions de l'équation quadratique sont:
-x1 = 1
+x1 = -1
 x2 = 3
 ```
 
