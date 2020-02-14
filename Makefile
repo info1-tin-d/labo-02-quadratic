@@ -2,11 +2,12 @@ CSRCS=$(wildcard *.c)
 COBJS=$(patsubst %.c,%.o,$(CSRCS))
 EXEC=$(patsubst %.c,%, $(word 1, $(CSRCS)))
 
-CFLAGS=-std=c99 -Wall -Werror -pedantic
+CFLAGS=-std=c99 -g -Wall -Werror -pedantic
 LDFLAGS=-lm
 
-all: $(EXEC) test
+all: build test
 
+build: $(EXEC)
 
 ifeq (, $(shell which colordiff))
 DIFF=diff
@@ -29,4 +30,4 @@ clean:
 	@echo -e '\e[1;34mCleaning...\e[m'
 	$(RM) $(EXEC) *.o a.out
 
-.PHONY: test all format
+.PHONY: test all format build

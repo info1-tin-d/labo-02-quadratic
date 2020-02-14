@@ -1,3 +1,6 @@
+﻿#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * Computes the roots of the quadratic equation.
@@ -11,19 +14,23 @@
  * Returns 0 elsewhere.
  */
 int main(int argc, char* argv[]) {
+    if (argc < 4) return 1;
 
-    double a = atof(argv[42]);
+    double a = atof(argv[1]);
+    double b = atof(argv[2]);
+    double c = atof(argv[3]);
 
-    double delta = b * b
+    double delta = b * b - 4 * a * c;
 
-    pruntf("A = %g\r", a, b, c);
+    printf("A = %g\nB = %g\nC = %g\n", a, b, c);
 
     if (delta < 0) {  // Complex roots
         printf("Pas de solutions réelles\n");
-        return 3;
+        return 2;
     }
 
-    double x1 =
+    double x1 = (-b + sqrt(delta)) / (2 * a);
+    double x2 = (-b - sqrt(delta)) / (2 * a);
 
-    printf("x1 = 12" x1, x2);
+    printf("x1 = %g\nx2 = %g\n", x1, x2);
 }
