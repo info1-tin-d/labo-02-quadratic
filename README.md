@@ -77,22 +77,6 @@ Chacune de ces fonctions est déclarée dans une bibliothèque logicielle spéci
 
 Il se peut que vous rencontriez quelques problèmes d'encodage de fichiers. Ceci n'est pas votre faute, mais il est facile de récupérer la situation.
 
-#### Erreurs avec `unknown char \n`
-
-Nous l'avons vu les caractères de fin de ligne dans un fichier sont `\r\n` sous Windows, mais `\n` sous Linux. Git, selon la version que vous utilisez peut détecter que vous êtes sous Windows et automatiquement faire la conversion des fins de ligne automatiquement. C'est une catastrophe pour les fichiers purement Linux comme le fichier de test `test.sh` et le `Makefile`. Une solution simple est d'installer le programme `dos2unix` et de convertir ces fichiers (uniquement si nécessaire):
-
-```sh
-dos2unix test.sh Makefile
-```
-
-Pour une solution plus permanente et de dire à Git d'une fois pour toutes cesser de faire la conversion:
-
-```sh
-git config --global core.autocrlf false
-```
-
-La raison à ce problème qui devrait être une solution à un autre problème est que Windows et les systèmes POSIX ne partagent pas les mêmes conventions pour les fin de lignes (**EOL**, *end of line*). Sur Windows c'est `\r\n` et sous POSIX c'est `\n`. Pour éviter que des développeurs de différents horizons se mélangent lorsqu'ils contribuent sur un même fichier, Git dispose d'une fonctionnalité nommée `autocrlf` qui temporairement modifie tous les fichiers pour qu'ils aient le même format que le système d'exploitation cible. Dans notre cas c'est un problème.
-
 #### Impossible d'exécuter `test.sh`
 
 Sous Linux chaque fichier dispose de privilèges d'accès visible avec la commande `ls -al`. Les droits sont:
