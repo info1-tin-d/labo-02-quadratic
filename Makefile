@@ -5,7 +5,7 @@ EXEC=$(patsubst %.c,%, $(word 1, $(CSRCS)))
 CFLAGS=-std=c99 -g -Wall -Werror -pedantic
 LDFLAGS=-lm
 
-all: build test
+all: build
 
 build: $(EXEC)
 
