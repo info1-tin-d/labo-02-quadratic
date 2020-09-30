@@ -1,7 +1,7 @@
 # Équation quadratique
 
 - **Durée**: 2 périodes + travail à la maison
-- **Date de rendu**: Dimanche soir avant minuit
+- **Date de rendu**: Lundi soir avant minuit
 
 Le programme `quadratic` résous l'équation [quadratique](https://fr.wikipedia.org/wiki/Formule_quadratique). Il reçoit en paramètre `A`, `B` et `C` et retourne les deux solutions `x1` et `x2`:
 
@@ -17,7 +17,7 @@ x1 = -1
 x2 = 3
 ```
 
-Pour compiler votre programme vous utiliserez la commande `make` qui appellera automatiquement `gcc` avec les bons paramètres. 
+Pour compiler votre programme, vous utiliserez la commande `make` qui appellera automatiquement `gcc` avec les bons paramètres. 
 
 Une fois compilé, vous pouvez tester votre programme avec `make test`. Il se pourrait que vous ayez une erreur comme celle-ci : 
 
@@ -51,7 +51,7 @@ int b = 3;
 printf("x1 = %d\nx2 = %d\n", a, b);
 ```
 
-La fonction `printf` recoit comme paramètres:
+La fonction `printf` reçoit comme paramètres:
 
 1. Le format de la chaîne de caractère
 2. Les variables nécessaires au formatage
@@ -60,7 +60,7 @@ Le marqueur `%d` sera remplacé par un entier passé en paramètre de la fonctio
 jaune](https://github.com/heig-vd-tin/refcard/releases/latest/download/refcard.pdf). La section *Formattage de chaîne de caractères* vous sera d'une aide précieuse. On voit par exemple que `f` est pour le `double` et que `d` est pour un entier signé `int`. Vous pouvez ajuster la précision avec `.`. `%+6.3f` affichera le signe `+`. Le nombre aura une longueur de 6 chiffres, dont 3
 chiffres, après la virgule.
 
-Il existe également le marqueur `%g`. A quoi sert-il, est-il utile pour ce travail pratique ?
+Il existe également le marqueur `%g`. À quoi sert-il, est-il utile pour ce travail pratique ?
 
 ### Fichiers d'en-tête (*headers*)
 
@@ -93,7 +93,7 @@ chmod +x test.sh
 
 ## Créativité, proactivité
 
-Si vous observez le fichier `criteria.yml` vous contaterez qu'un certain nombre de points vous est attribués sur la créativité et la proactivité. Vous pourriez donc aller plus loin que cette donnée et par exemple donner les solutions imaginaires au lieu de retourner `2`. Dans ce cas il vous faudra aussi modifier `test.sh` pour ajouter les tests nécessaires.
+Si vous observez le fichier `criteria.yml` vous constaterez qu'un certain nombre de points vous est attribué sur la créativité et la proactivité. Vous pourriez donc aller plus loin que cette donnée et par exemple donner les solutions imaginaires au lieu de retourner `2`. Dans ce cas il vous faudra aussi modifier `test.sh` pour ajouter les tests nécessaires.
 
 Vous pourriez utiliser une fonction `quadratic` séparée du `main` pour une meilleure modularité du programme. 
 

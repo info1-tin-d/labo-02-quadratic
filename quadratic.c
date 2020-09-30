@@ -36,3 +36,4 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
+// Aïe aïe c'est vendredi, je vais être en retard pour le sandwich foie gras canard...
