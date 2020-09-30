@@ -93,10 +93,8 @@ chmod +x test.sh
 
 ## Créativité, proactivité
 
-Si ce travail pratique est trop simple... Vous pouvez aller plus loin pour obtenir des points de proactivité et de créativité. Par exemple, vous pourriez donner les solutions imaginaires au lieu de retourner `2`. Dans ce cas il vous faudra aussi modifier `test.sh` pour ajouter les tests nécessaires.
+Si vous observez le fichier `criteria.yml` vous contaterez qu'un certain nombre de points vous est attribués sur la créativité et la proactivité. Vous pourriez donc aller plus loin que cette donnée et par exemple donner les solutions imaginaires au lieu de retourner `2`. Dans ce cas il vous faudra aussi modifier `test.sh` pour ajouter les tests nécessaires.
 
-Vous pourriez utiliser une fonction `quadratic` séparée du `main` pour une meilleure modularité du programme.
+Vous pourriez utiliser une fonction `quadratic` séparée du `main` pour une meilleure modularité du programme. 
 
-Vous pourriez faire d'autres choses auquel je n'aurais pas pensé...
-
-Il existe dans ce projet un fichier nommé `.clang-format` c'est un fichier de description pour formater automatiquement vos fichiers sources. Il s'utilise avec le programme `clang-format` qu'il faut installer. Pour tester votre format, vous pouvez ensuite utiliser `make format`.
+Libre place à votre créativité.

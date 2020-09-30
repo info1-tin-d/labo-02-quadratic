@@ -5,76 +5,76 @@ details:
     description: Livraison du code
     on-time:
       description: Le référentiel de projet est livré avant l'échéance
-      points: 10
+      $points: [0, 10]
   binary:
     description: Exécutable binaire
     all-tests-passed:
       description: Tous les tests fonctionnels ont passés avec succès.
-      points: 10
+      $points: [0, 10]
   build:
     description: Compilation du code
     with-no-errors:
       description: Aucune erreur de compilation
-      points: 2
+      $points: [0, 2]
     with-no-warnings:
       description: Aucune alerte de compilation
-      points: 2
+      $points: [0, 2]
     c99-compliant:
       description: Le code est compatible avec le standard C99
-      points: 1
+      $points: [0, 1]
   code:
     description: Code source
     minimalist:
       description: Le code est minimaliste et optimum
-      points: 1
+      $points: [0, 1]
     consistency:
       description: Les conventions d'édition choisies sont cohérentes et harmonieuses dans tout le code
-      points: 1
+      $points: [0, 1]
     naming:
       description: Les conventions de nommage des variables sont appropriées
-      points: 1
+      $points: [0, 1]
     no-dead-code:
       description: Il n'y a pas de code mort, non exécuté ou inutile
-      points: 1
+      $points: [0, 1]
     effort-to-use-english:
       description: Un effort est mis sur l'utilisation de l'anglais
-      points: 1
+      $points: [0, 1]
     indentation:
       description: L'indentation du code est cohérente
-      points: 1
+      $points: [0, 1]
   commit:
     description: Commits sous Git
     segmentation:
       description: Les commits sont bien partagés en blocs fonctionnels
-      points: 1
+      $points: [0, 1]
     good-comments:
       description: Les commentaires de commit sont concis, précis et cohérents.
-      points: 1
+      $points: [0, 1]
   quadratic:
     description: Travail à faire pour ce laboratoire
     semicolon:
       description: Le nombre d'argument est convenablement testé
-      points: 1
+      $points: [0, 1]
     variable-name:
       description: Le calcul du delta est correct
-      points: 1
+      $points: [0, 1]
     modulo:
       description: Le calcul des racines x1 et x2 est correct
-      points: 1
+      $points: [0, 1]
     offset:
       description: Les sorties sont formatées convenablement
-      points: 1
+      $points: [0, 1]
   bonus:
     description: Bonus
     creativity:
       description: L'étudiant a apporté de la créativité au projet
-      bonus: 1
+      $bonus: [0, 1]
     proactivity:
       description: L'étudiant a démontré une certaine proactivité en allant plus loin que le cahier des charges initial
-      bonus: 1
+      $bonus: [0, 1]
     rigourous:
       description: L'étudiant s'est montré rigoureux avec la donnée, son travail et le résultat obtenu
-      bonus: 1
+      $bonus: [0, 1]
     references:
       description: Des références sont faites sur les sources des données extérieures
-      bonus: 1
+      $bonus: [0, 1]

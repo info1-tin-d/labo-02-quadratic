@@ -15,9 +15,6 @@ else
 DIFF=colordiff
 endif
 
-format: $(CSRCS)
-	clang-format $< | $(DIFF) $< -
-
 %: %.c
 	@echo -e '\e[1;34mCompilation...\e[m'
 	$(CC) $(CFLAGS) $? -o $@ $(LDFLAGS)

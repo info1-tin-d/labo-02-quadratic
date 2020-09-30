@@ -33,4 +33,6 @@ int main(int argc, char* argv[]) {
     double x2 = (-b - sqrt(delta)) / (2 * a);
 
     printf("x1 = %g\nx2 = %g\n", x1, x2);
+
+    return 0;
 }
