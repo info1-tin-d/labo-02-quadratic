@@ -1,25 +1,24 @@
 # Équation quadratique
 
 - **Durée**: 2 périodes + travail à la maison
-- **Date de rendu**: Lundi soir avant minuit
 
-Le programme `quadratic` résous l'équation [quadratique](https://fr.wikipedia.org/wiki/Formule_quadratique). Il reçoit en paramètre `A`, `B` et `C` et retourne les deux solutions `x1` et `x2`:
+Le programme `quadratic` résout l'équation [quadratique](https://fr.wikipedia.org/wiki/Formule_quadratique). Il reçoit en paramètre `A`, `B` et `C` et retourne les deux solutions `x1` et `x2`:
 
 ```shell
 $ ./quadratic -1 2 3
-Pour les valeurs:
+Pour les valeurs :
 A = -1
 B = 2
 C = 3
 
-Les solutions de l'équation quadratique sont:
+Les solutions de l'équation quadratique sont :
 x1 = -1
 x2 = 3
 ```
 
-Pour compiler votre programme, vous utiliserez la commande `make` qui appellera automatiquement `gcc` avec les bons paramètres. 
+Pour compiler votre programme, vous utiliserez la commande `make` qui appellera automatiquement `gcc` avec les bons paramètres.
 
-Une fois compilé, vous pouvez tester votre programme avec `make test`. Il se pourrait que vous ayez une erreur comme celle-ci : 
+Une fois compilé, vous pouvez tester votre programme avec `make test`. Il se pourrait que vous ayez une erreur comme celle-ci :
 
 ```
 ./test.sh: line 109: shunit2: No such file or directory
@@ -93,8 +92,8 @@ chmod +x test.sh
 
 ## Créativité, proactivité
 
-Si vous observez le fichier `criteria.yml` vous constaterez qu'un certain nombre de points vous est attribué sur la créativité et la proactivité. Vous pourriez donc aller plus loin que cette donnée et par exemple donner les solutions imaginaires au lieu de retourner `2`. Dans ce cas il vous faudra aussi modifier `test.sh` pour ajouter les tests nécessaires.
+Si vous observez le fichier `criteria.yml` (en format [YAML](https://fr.wikipedia.org/wiki/YAML)) vous constaterez qu'un certain nombre de points vous est attribué sur la créativité et la proactivité. Vous pourriez donc aller plus loin que cette donnée et par exemple donner les solutions imaginaires au lieu de retourner `2`. Dans ce cas il vous faudra aussi modifier `test.sh` pour ajouter les tests nécessaires.
 
-Vous pourriez utiliser une fonction `quadratic` séparée du `main` pour une meilleure modularité du programme. 
+Vous pourriez utiliser une fonction `quadratic` séparée du `main` pour une meilleure modularité du programme.
 
 Libre place à votre créativité.

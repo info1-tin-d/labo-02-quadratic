@@ -2,7 +2,7 @@ CSRCS=$(wildcard *.c)
 COBJS=$(patsubst %.c,%.o,$(CSRCS))
 EXEC=$(patsubst %.c,%, $(word 1, $(CSRCS)))
 
-CFLAGS=-std=c99 -g -Wall -Werror -pedantic
+CFLAGS=-std=c17 -g -Wall -Werror -pedantic
 LDFLAGS=-lm
 
 all: build
